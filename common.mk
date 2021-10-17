@@ -355,8 +355,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
 # VNDK
-PRODUCT_PACKAGES += \
-    vndk_package
+$(foreach target, $(shell cat $(LOCAL_PATH)/vndk.txt), $(eval PRODUCT_PACKAGES += $(target).vendor))
 
 # Vulkan
 PRODUCT_COPY_FILES += \
