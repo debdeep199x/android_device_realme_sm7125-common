@@ -1,0 +1,8 @@
+#NFC
+persist.nfc.                              u:object_r:vendor_nfc_prop:s0
+
+#GFX
+ro.gfx.driver.1                           u:object_r:graphics_config_prop:s0
+
+# Recovery
+ro.build.expect.        			u:object_r:exported_default_prop:s0
