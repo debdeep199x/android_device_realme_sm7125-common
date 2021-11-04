@@ -357,7 +357,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
 # VNDK
-$(foreach target, $(shell cat $(LOCAL_PATH)/vndk.txt), $(eval PRODUCT_PACKAGES += $(target).vendor))
+PRODUCT_PACKAGES += \
+    vndk_package
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-core/libgui.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxxx.so \
+    prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-core/libgui.so:$(TARGET_COPY_OUT_SYSTEM)/lib6/libxxx.so \
 
 # Vulkan
 PRODUCT_COPY_FILES += \
@@ -396,7 +401,7 @@ PRODUCT_PACKAGES += \
 
 #PRODUCT_BOOT_JARS += \
     WfdCommon
-    
+
 # HAX
 PRODUCT_PACKAGES += \
     android.frameworks.automotive.display@1.0.vendor \
