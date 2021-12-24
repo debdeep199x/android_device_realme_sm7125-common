@@ -576,3 +576,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libtinyxml.vendor
+
+#Safnet Hax
+PRODUCT_PACKAGES += \
+	init.safailnet.rc
