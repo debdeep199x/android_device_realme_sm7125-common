@@ -401,7 +401,7 @@ PRODUCT_PACKAGES += \
 
 #PRODUCT_BOOT_JARS += \
     WfdCommon
-    
+
 # HAX
 PRODUCT_PACKAGES += \
     android.frameworks.automotive.display@1.0.vendor \
@@ -576,3 +576,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libtinyxml.vendor
+
+#Safnet Hax
+PRODUCT_PACKAGES += \
+	init.safailnet.rc
