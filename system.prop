@@ -47,6 +47,10 @@ dalvik.vm.dexopt.secondary=true
 # DPM
 persist.dpm.feature=1
 
+# Graphics
+ro.sf.blurs_are_expensive=0
+ro.surface_flinger.supports_background_blur=0
+
 # GBoard
 ro.com.google.ime.kb_pad_port_b=1
 
