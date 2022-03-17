@@ -50,4 +50,3 @@ on post-fs-data
 
 on property:sys.boot_completed=1
     stop debug_logcat
-    #chmod 0640 /sys/fs/selinux/enforce
